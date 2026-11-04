@@ -548,20 +548,23 @@ zstd = ["zstandard (>=0.18.0)"]
 
 [[package]]
 name = "httpx-aiohttp"
-version = "0.1.12"
+version = "0.2.0"
 description = "Aiohttp transport for HTTPX"
 optional = true
-python-versions = ">=3.8"
+python-versions = ">=3.9"
 groups = ["main"]
 markers = "extra == \"aiohttp\""
 files = [
-    {file = "httpx_aiohttp-0.1.12-py3-none-any.whl", hash = "sha256:5b0eac39a7f360fa7867a60bcb46bb1024eada9c01cbfecdb54dc1edb3fb7141"},
-    {file = "httpx_aiohttp-0.1.12.tar.gz", hash = "sha256:81feec51fd82c0ecfa0e9aaf1b1a6c2591260d5e2bcbeb7eb0277a78e610df2c"},
+    {file = "httpx_aiohttp-0.2.0-py3-none-any.whl", hash = "sha256:ccd6eb19ba18805476096e8ef0b369a6beda3955db145a538979eface2fce7ff"},
+    {file = "httpx_aiohttp-0.2.0.tar.gz", hash = "sha256:d4796b981f04734f1d1db9b4d9326ea16bc994f126460b93b69036262cd4a9d8"},
 ]
 
 [package.dependencies]
 aiohttp = ">=3.10.0,<4"
 httpx = ">=0.27.0"
+
+[package.extras]
+httpx2 = ["httpx2 (>=2,<3)"]
 
 [[package]]
 name = "idna"
@@ -1619,4 +1622,4 @@ aiohttp = ["aiohttp", "httpx-aiohttp"]
 [metadata]
 lock-version = "2.1"
 python-versions = "^3.10"
-content-hash = "4eaeff06fb8e558535aa3729ed6f99c2398eaaba665bcdf9c096bb08d9cb5fc6"
+content-hash = "1041bdc5a521b6f1f4647ffef776893213d5645b7ededd8d7935957e343b7a6a"

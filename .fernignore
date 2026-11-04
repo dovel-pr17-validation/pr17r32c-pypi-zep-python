@@ -1,0 +1,16 @@
+# Specify files that shouldn't be modified by Fern
+#
+# v4 starts from Fern's generated SDK rather than v3's hand-written layer. Only
+# what must not be regenerated stays here:
+#   .github  — the SDK Release audit fails closed unless CI is protected
+#   LICENSE  — legal text, not a generated artifact
+#
+# Anything ported forward from v3 is re-added deliberately, file by file.
+.github
+LICENSE
+# The ontology DSL is hand-written: it derives the entity and edge type lists
+# from Python classes, which no generator produces. Everything it depends on
+# (EntityType, EdgeType, EntityProperty) is generated and not frozen.
+src/zep_cloud/ontology.py
+tests/ontology/
+.gitattributes
